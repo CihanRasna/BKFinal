@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kayitekran"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <TextView
+        android:id="@+id/biletHosgeldiniz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/bilet_Hosgeldiniz"
+        android:textColor="@color/textBeyaz"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="vertical">
+
+        <AutoCompleteTextView
+            android:id="@+id/kalkisSehir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kalkisNoktasi"
+            android:textColorHint="@color/textBeyaz" />
+
+        <AutoCompleteTextView
+            android:id="@+id/varisSehir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:hint="@string/varisNoktasi"
+            android:textColorHint="@color/textBeyaz" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/biletTurText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/underLineText1"
+            android:textColor="@color/textBeyaz"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/biletTurText"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/radioTek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tekYon" />
+
+            <RadioButton
+                android:id="@+id/radioGD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/gidisDonus" />
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/gidisTarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="#FFF"
+            android:hint="Gidiş Tarihiniz"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/donusTarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15sp"
+            android:background="#FFF"
+            android:hint="Dönüş Tarihiniz"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/gidisPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gidisTarih"
+            android:layout_marginTop="20sp"
+            android:text="Gidiş Tarihi" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/donusPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/donusTarih"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20sp"
+            android:text="Dönüş Tarihi" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tarihSecim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/buttonshape"
+            android:text="@string/saatSecim" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

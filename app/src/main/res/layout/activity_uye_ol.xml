@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kayitekran"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <TextView
+        android:id="@+id/kayitOlTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/UyeKayit"
+        android:textColor="@color/textBeyaz"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/newName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ad_soyad_giriniz"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/textBeyaz" />
+
+    <EditText
+        android:id="@+id/newUserMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/eMail"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/textBeyaz" />
+
+    <EditText
+        android:id="@+id/newUserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sifreGir"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColorHint="@color/textBeyaz" />
+
+    <EditText
+        android:ems="10"
+        android:id="@+id/newPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phoneNumber"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textColorHint="#FFF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cinsiyetiniz:"
+            android:textColor="#000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/cinsiyetKadin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cKadin" />
+
+        <RadioButton
+            android:id="@+id/cinsiyetErkek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cErkek" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonshape"
+        android:shadowRadius="5"
+        android:text="@string/UyeKayit"
+        android:textColor="@color/btnRenk" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:text="@string/ZatenUye"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/kayittanGirise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:text="@string/btnGirisYap"
+            android:textColor="@color/btnRenk" />
+
+        <Button
+            android:id="@+id/btnListele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:text="Kayitli Kullanicilar"
+            android:textColor="@color/btnRenk" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom">
+
+        <TextView
+            android:id="@+id/passwordUyari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lütfen Burayı Okuyunuz!"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>

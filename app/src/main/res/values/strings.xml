@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">BK Turizm</string>
+    <string name="btnGiris">Uye Girisi</string>
+    <string name="btnUyeOl">Uye Ol</string>
+    <string name="btnUyeOlma">Uye Olmadan Devam Et</string>
+    <string name="btnGirisYap">Giris Yap</string>
+    <string name="UyeKayit">Kayıt Ol</string>
+    <string name="ZatenUye">Zaten Üye Misiniz?</string>
+    <string name="eMail">E-Mail Adresinizi Giriniz</string>
+    <string name="sifreGir">Şifrenizi Giriniz</string>
+    <string name="phoneNumber">Telefon Numaranızı Giriniz</string>
+    <string name="sifremiUnuttum">Şifremi Unuttum</string>
+    <string name="cKadin">Kadın</string>
+    <string name="cErkek">Erkek</string>
+    <string name="gidis_tarihi_seciniz">Satın Alma Ekranına Hoşgeldiniz</string>
+    <string name="bilet_Hosgeldiniz">Bilet Satın Alma Ekranına Hoşgeldiniz!</string>
+    <string name="kalkisNoktasi">Kalkış Noktasını Seçiniz</string>
+    <string name="varisNoktasi">Varış Noktasını Seçiniz</string>
+    <string name="saatSecim">Saat Seçimine Devam Et</string>
+    <string name="underLineText1"><u>Bilet Türünü Seçiniz:</u></string>
+    <string name="tekYon">Tek Yön</string>
+    <string name="gidisDonus">Gidiş/Dönüş</string>
+    <string name="ad_soyad_giriniz">Ad Soyad Giriniz</string>
+    <string-array name="Sehirler">
+        <item>İstanbul</item>
+        <item>İzmir</item>
+        <item>Ankara</item>
+        <item>Zonguldak</item>
+        <item>Şanlıurfa</item>
+        <item>Diyarbakır</item>
+        <item>Bursa</item>
+        <item>Konya</item>
+        <item>Sivas</item>
+        <item>Antalya</item>
+        <item>Adana</item>
+        <item>Kayseri</item>
+        <item>Samsun</item>
+        <item>Erzurum</item>
+        <item>Kars</item>
+        <item>Mersin</item>
+        <item>Balıkesir</item>
+        <item>Adıyaman</item>
+        <item>Tunceli</item>
+        <item>Erzincan</item>
+
+    </string-array>
+    <string name="title_activity_saat_secimi">saatSecimi</string>
+</resources>
